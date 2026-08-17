@@ -25,11 +25,11 @@ st.set_page_config(
 def load_data():
 
     df = pd.read_csv(
-        "data/medicines_cleaned.csv"
+        "medicines_cleaned.csv"
     )
 
     embeddings = np.load(
-        "models/medicine_embeddings.npy"
+        "medicine_embeddings.npy"
     )
 
     return df, embeddings
